@@ -34,13 +34,13 @@ const router = createBrowserRouter(
         <Route
           path="contacts/:contactId"
           element={<Contact />}
-          loader={contactLoader}
+          loader={contactLoader()}
           action={contactAction}
         />
         <Route
           path="contacts/:contactId/edit"
           element={<EditContact />}
-          loader={contactLoader}
+          loader={contactLoader()}
           action={editAction}
         />
         <Route path="contacts/:contactId/destroy" action={destroyAction} />
