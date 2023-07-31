@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "ssc build -r -o",
+    "build:ssc": "vite build --base=./ .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@socketsupply/socket": "0.3.3",
     "@tanstack/react-query": "4.29.3",
     "localforage": "1.10.0",
     "match-sorter": "6.3.1",
